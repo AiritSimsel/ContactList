@@ -7,11 +7,6 @@
     <script src="https://kit.fontawesome.com/72db12224a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-    body {
-      background-image: url('../public/img/teahub.io-free-space-wallpaper-1348916.png');
-    }
-    </style>
 <body>
 
     <div class="box" id="heading">
@@ -23,27 +18,34 @@
         <% for(let i = 0; i < contacts.length; i++) { %>
             <form action="/delete" method="POST">
                 <div class="contact">
-                    <button name="button" value="<%= contacts[i].contact.name %>" onclick="this.form.submit()"><i class="fas fa-trash-alt"></i></button>
+                    
                     <input name="hiddenbutton" value="<%= contacts[i].contact.phone %>" hidden="hidden">
-                    <span><p><%= contacts[i].contact.name %></p></span>
-                    <span><p><%= contacts[i].contact.phone %></p></span> 
+                    <span>
+                        <p>
+                            <%= contacts[i].contact.name %>&#160;&#160;<%= contacts[i].contact.phone %>&#160;&#160;
+                            <button name="button" value="<%= contacts[i].contact.name %>" onclick="this.form.submit()"><i class="fas fa-trash-alt"></i></button>
+                        </p>
+                    </span>
                 </div>
             </form>            
         <% } %>    
         
         <form action="/createContact" method="Post">   
-            <label for="">Name</label>
+            <label for="">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-space-shuttle"></i></label>
             <input type="text" name="newName"/><br><br>
-            <label for="">Number</label>
+            <label for="">Number&nbsp;&nbsp;<i class="fas fa-space-shuttle"></i></label>
             <input type="text" name="newNumber"/><br><br>
-            <label for="submit"><i class="fas fa-pencil-alt"></i></label>
-            <input type="submit" id="submit">
+            <label for="submit"></label>
+            <input type="submit" id="submit" value="&#10039; ADD NEW CONTACT">
+            
+
         
         </form>
     </div>
     
     <footer>
         <span>Airit S. &#169; 2021</span>
+        <span>Photo by Abed Ismail on Unsplash</span>
     </footer>
 </body>
 </html>

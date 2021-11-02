@@ -1,17 +1,18 @@
-:root {
-    --blue-color: #43dbcf;
-    --light-blue:  #c0faf6;
-  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+  html { 
+    background: url("../img/abed-ismail-_jhUrn9o8yM-unsplash.jpg") no-repeat 
+      center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
-  body {
-    background-image: url("/public/img/teahub.io-free-space-wallpaper-1348916.png");
-    background-size: cover;
-  
-  }
-  
+    
   html {
-      font-family: 'helvetica neue';
+      font-family: 'Bebas Neue', cursive;
     }
     
     h1 {
@@ -20,38 +21,26 @@
     }
     
     .box {
-      max-width: 400px;
+      max-width: 600px;
       margin: 50px auto;
-      background: white;
+      margin-top: 129px;
+      background: darkslategrey;
       border-radius: 5px;
       box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     }
     
     #heading {
-      background-color: var(--blue-color);
+      background-color: darkslategrey;
       text-align: center;
     }
-    
-    .item {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #F1F1F1;
-    }
-    
-    .item:last-child {
-      border-bottom: 0;
-    }
-    
 
     p {
       margin: 0;
       padding: 20px;
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 200;
-      color: #00204a;
+      color: white;
     }
-
     
     form {
       text-align: center;
@@ -63,11 +52,12 @@
       width: 50px;
       border-radius: 50%;
       border-color: transparent;
-      background-color: var(--blue-color);
+      background-color: darkslategrey;
       color: #fff;
-      font-size: 30px;
+      font-size: 25px;
       padding-bottom: 6px;
       border-width: 0;
+      cursor: pointer;
     }
     
     input[type="text"] {
@@ -75,40 +65,35 @@
       height: 60px;
       top: 10px;
       border: none;
-      background: transparent;
+      background: darkslategray;
       font-size: 20px;
       font-weight: 200;
       width: 313px;
+      box-shadow: inset 0 -1px 0 0 whitesmoke;
     }
 
-    input[type="number"] {
-      text-align: center;
-      height: 60px;
-      top: 10px;
-      border: none;
-      background: transparent;
-      font-size: 20px;
-      font-weight: 200;
-      width: 313px;
-    }
-    
     input[type="text"]:focus {
       outline: none;
-      box-shadow: inset 0 -3px 0 0 var(--blue-color);
-    }
-    
-    input[type="number"]:focus {
-      outline: none;
-      box-shadow: inset 0 -3px 0 0 var(--blue-color);
+      box-shadow: inset 0 -3px 0 0 darkred;
     }
 
     input[type=submit] {
-      background-color: #43dbcf;
+      background-color: darkslategrey;
       border: none;
-      color: white;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 22px;
+      color: whitesmoke;
       padding: 16px 32px;
       margin: 4px 2px;
       cursor: pointer;
+    }
+
+    label {
+      border: none;
+      color: black;
+      padding-right: 100px;
+      margin: auto;
+      font-size: 22px;
     }
 
     ::placeholder {
@@ -117,8 +102,7 @@
     }
     
     footer {
-      color: white;
-      color: rgba(0, 0, 0, 0.5);
+      color: beige;      ;
       text-align: center;
     }
 

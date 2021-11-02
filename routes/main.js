@@ -9,7 +9,3 @@ router.post('/createContact', contactController.postNewContact);
 router.post('/delete', contactController.deleteContact);
 
 module.exports = router;
-
-//lisa projektile uus route nimega shoppingList
-//lisa projektile ka kontrollerit shoppingList routeri jaoks
-//shoppingList leheküljel peab olema kirjutatud Shopping List
